@@ -37,12 +37,14 @@ const App = () => {
         {/* <AllBooks /> */}
         {/* <AllBooks2 /> */}
         <Row>
-          <Col md={8}>
+          <Col>
             <BookList setNewAsin={setNewAsin} selectedAsin={selectedAsin} />
           </Col>
-          <Col md={4}>
-            <CommentArea asin={selectedAsin} />
-          </Col>
+          {selectedAsin && (
+            <Col md={4}>
+              <CommentArea asin={selectedAsin} />
+            </Col>
+          )}
         </Row>
       </main>
       <MyFooter name="EpiBooks"> </MyFooter>

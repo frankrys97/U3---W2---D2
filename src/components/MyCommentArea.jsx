@@ -60,7 +60,8 @@ const CommentArea = (props) => {
 
   useEffect(() => {
     getComment();
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [props.asin]);
 
   return (
     <>

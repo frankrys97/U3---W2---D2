@@ -41,7 +41,7 @@ const MySingleBook = (props) => {
             if (props.book.asin === props.selectedAsin) {
               props.setNewAsin("");
             } else {
-              props.setNewAsin(this.props.book.asin);
+              props.setNewAsin(props.book.asin);
             }
           }}
         />

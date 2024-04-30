@@ -138,6 +138,12 @@ const MyBookList = (props) => {
             Scifi
           </Button>
         </ButtonGroup>
+        {!props.selectedAsin && (
+          <div>
+            <h4 className="m-0">Click on the books to leave a comment!</h4>
+          </div>
+        )}
+
         <input
           type="text"
           placeholder="Search..."
